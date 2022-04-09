@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+/* font-family: 'Inspiration', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+/* header version 320 */
+header {
+    background-color: rgba(245, 245, 220, 0.473);
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .boton__menu {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        border: none;
+        color:rgb(22, 20, 92);    
+    }
+    
+    .menu {
+    display: none;
+    }
+    
+/* media querie */
+/* inicio header */
+@media only screen and (min-width: 890px) {
+    .boton__menu{
+        display: none;
+    }
+    .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5em;
+    }
+    li{
+    padding: 10px;
+    margin: 15px;
+    list-style: none;
+    }
+    a{
+    text-decoration: none;
+    border-radius: 40%;
+    }
+    header nav ul li a:hover {
+    background-color: rgb(12, 12, 12);
+    color: rgba(221, 210, 210, 0.849);
+    padding: 5px;
+    }
+}
+/* fin de header */
+
+/* main del inicio */
+.paginaprincipal {
+    background-image: url("../medios/fotofondo.jpeg");
+    height: 120vh;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    filter: contrast(110%) brightness(90%);
+    padding: 5px;
+    margin: 0px 5px;
+}
+.titulopaginaprincipal{
+    color: rgb(220, 221, 209);
+    font-family: 'Inspiration', cursive;
+    text-align: left;
+    padding: 10px;
+    margin:5px;
+    width: 50px;
+    font-size: 3em;
+}
+.botonexperiencias {
+    position: absolute;
+    right:26px;
+    bottom:50px;
+    width: 10%;
+    height: 7%;
+    border-radius: 8px;
+}
+button.botonexperiencias:hover{
+    background-color: rgba(128, 128, 128, 0.192);
+    color: rgba(240, 248, 255, 0.822);
+}
+.parpagprincipal {
+    color:white;
+    font-size: 1em;
+}
+
+/* inicio blog.html */
+.blog {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.columna1 .blog__social {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.columna1 .blog__social li i:hover{
+    transform: scale(1.4)
+}
+.columna1 p{
+    font-family: 'Inspiration', cursive;
+    color: black;
+    font-size: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+.columna2 p{
+    font-family: 'Inspiration', cursive;
+    color: black;
+    font-size: 3rem;
+    /* justify-content: center;
+    text-align: center; */
+}
+
+
+/* fin del blog */
+
+
+/* miPorfolio.html */
+.porfolio {
+    display: flex;
+    direction: row;
+    background-color: rgba(224, 216, 216, 0.904);
+    margin: 5px;
+    padding: 15px;
+    box-shadow: 5px black;
+}
+main img {
+    height: 35rem;
+    border-radius:15px;
+}
+.educacion {
+    padding: 10px;
+}
+.experiencias {
+    padding: 10px;
+}
+.conocimientos {
+    padding: 10px;
+}
+/* fin de miPorfolio */
+
+/* contacto */
+.contacto {
+    min-height: 80vh;
+    border: 1px solid black;
+    /* background-color: rgba(230, 218, 218, 0.966); */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at 100%, rgb(190, 190, 224), transparent);
+
+}
+
+.contacto .contacto__form {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.contacto .contacto__form legend {
+    text-align: center;
+    margin-bottom: 2px;
+}
+.contacto .contacto__form input {
+    height: 2rem;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 1rem;
+    outline: none;
+}
+.contacto .contacto__form .contacto__botones{
+    justify-content: center;
+    text-align: center;
+    gap: 2px;
+    margin-top: 1rem;
+    padding: 2px;
+}
+.contacto p {        
+    font-family: 'Inspiration', cursive;
+    color: black;
+    font-size: 4rem;
+    justify-content: center;
+    text-align: center;
+    /* fin de contacto */
+}
+
+
+/* inicio entretenimiento */
+
+.entretenimiento{
+    height: 25rem;
+    justify-content:center;
+    text-align:center;
+    background: radial-gradient(circle at 100%, rgb(163, 82, 82), transparent);
+}
+
+/* footer */
+footer {
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer li i{
+    gap: 2px;
+} 
+/* fin del footer */

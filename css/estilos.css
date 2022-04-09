@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+/* font-family: 'Inspiration', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* estilos del header */
+header {
+    background-color: rgba(245, 245, 220, 0.473);
+    border-radius: rgba(245, 245, 220, 0.164);
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    height: 130px;
+    margin-bottom: 15px;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+li{
+    padding: 10px;
+    margin: 15px;
+    color:rgba(75, 4, 4, 0.692);
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding: 1px;
+    margin:2px;
+}
+header nav ul li a:hover {
+ background-color: rgba(128, 128, 128, 0.219);
+ color: rgba(255, 0, 0, 0.281);
+}
+/* fin del header */
+/* main pagina inicio */
+
+.paginaprincipal {
+    background-image: url("../medios/fotofondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 1500px;
+ /* no se como hacer para que la imagen ocupe toda la pantalla, solo se me adapta al contenido de la caja
+ que son solos unos renglones. la forma que logre fue ampliando el alto pero creo que no es una buena practica */
+
+}
+.titulopaginaprincipal{
+    color: white;
+    font-family: 'Inspiration', cursive;
+    text-align: center;
+    padding: 10px;
+    margin:5px;
+}
+.parrafoprincipal {
+   color:white;
+}
+.parpagprincipal {
+    width: 40%;
+    color:white;
+    position: absolute;
+    top: 80%;
+    right: 55%;
+}
+.botonexperiencias {
+    position: absolute;
+    right:26px;
+    bottom:50px;
+    width: 10%;
+    height: 7%;
+    border-radius: 8px;
+}    
+button.botonexperiencias:hover{
+    background-color: rgba(128, 128, 128, 0.192);
+    color: rgba(240, 248, 255, 0.822);
+    /* la idea es que el boton de experiencias te lleve a la seccion experiencias dentro de miPorfolio.html. pero aun no lo se hacer */
+}/* fin del main de index html */
+
+/* miPorfolio.html */
+.porfolio {
+    display: flex;
+    direction: row;
+    background-color: rgba(224, 216, 216, 0.904);
+    margin: 0 auto;
+    padding: 15px;
+}
+main img {
+    height: 35rem;
+    border-radius:15px;
+}
+.educacion {
+    padding: 10px;
+}
+.experiencias {
+    padding: 10px;
+}
+.conocimientos {
+    padding: 10px;
+}

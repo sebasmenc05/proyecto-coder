@@ -46,8 +46,8 @@ header {
     gap: 1.5em;
     }
     li{
-    padding: 10px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
     list-style: none;
     }
     a{
@@ -65,7 +65,7 @@ header {
 /* main del inicio */
 .paginaprincipal {
     background-image: url("../medios/fotofondo.jpeg");
-    height: 120vh;
+    height: 70vh vw;
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size: cover;
@@ -142,14 +142,14 @@ button.botonexperiencias:hover{
 /* miPorfolio.html */
 .porfolio {
     display: flex;
-    direction: row;
+    flex-direction: row;
     background-color: rgba(224, 216, 216, 0.904);
     margin: 5px;
-    padding: 15px;
+    padding: 5px;
     box-shadow: 5px black;
 }
 main img {
-    height: 35rem;
+    height: 30vw;
     border-radius:15px;
 }
 .educacion {
@@ -217,7 +217,7 @@ main img {
     height: 25rem;
     justify-content:center;
     text-align:center;
-    background: radial-gradient(circle at 100%, rgb(163, 82, 82), transparent);
+    background: radial-gradient(rgb(163, 82, 82), rgb(228, 209, 209));
 }
 
 /* footer */

@@ -63,6 +63,18 @@ header {
 /* fin de header */
 
 /* main del inicio */
+
+@keyframes left-in {
+    0% {
+        left:-100%;
+        
+    }
+    100% {
+        left:0%;
+        
+    }
+    
+}
 .paginaprincipal {
     background-image: url("../medios/fotofondo.jpeg");
     height: 70vh vw;
@@ -76,14 +88,20 @@ header {
     margin: 0px 5px;
 }
 .titulopaginaprincipal{
-    color: rgb(220, 221, 209);
+    position: relative;
+    color:blue;
     font-family: 'Inspiration', cursive;
     text-align: left;
-    padding: 10px;
+    padding: 5px;
     margin:5px;
     width: 50px;
-    font-size: 3em;
+    font-size: 3rem;
+    animation-name: left-in;
+    animation-duration: 1s;
 }
+
+
+
 .botonexperiencias {
     position: absolute;
     right:26px;
@@ -97,7 +115,7 @@ button.botonexperiencias:hover{
     color: rgba(240, 248, 255, 0.822);
 }
 .parpagprincipal {
-    color:white;
+    color:blue;
     font-size: 1em;
 }
 

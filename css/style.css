@@ -55,8 +55,8 @@ header {
     border-radius: 40%;
     }
     header nav ul li a:hover {
-    background-color: rgb(12, 12, 12);
-    color: rgba(221, 210, 210, 0.849);
+    background-color: rgb(240, 142, 142);
+    color: rgba(77, 39, 39, 0.849);
     padding: 5px;
     }
 }
@@ -245,6 +245,11 @@ footer {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 .footer {
+    list-style: none;
+}
+@media only screen and (min-width: 890px) {
+
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -252,4 +257,5 @@ footer {
 .footer li i{
     gap: 2px;
 } 
+}
 /* fin del footer */

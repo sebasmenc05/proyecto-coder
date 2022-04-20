@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 /* font-family: 'Inspiration', cursive; */
+/* font-family: 'Ubuntu', sans-serif; */
 
 *{
     margin: 0;
@@ -90,12 +91,12 @@ header {
 .titulopaginaprincipal{
     position: relative;
     color:blue;
-    font-family: 'Inspiration', cursive;
+    font-family: 'Ubuntu', sans-serif;
     text-align: left;
     padding: 5px;
     margin:5px;
     width: 50px;
-    font-size: 3rem;
+    font-size: 2em;
     animation-name: left-in;
     animation-duration: 1s;
 }
@@ -139,14 +140,14 @@ button.botonexperiencias:hover{
     transform: scale(1.4)
 }
 .columna1 p{
-    font-family: 'Inspiration', cursive;
+    font-family: 'Ubuntu', sans-serif;
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
     justify-content: center;
     text-align: center;
 }
 .columna2 p{
-    font-family: 'Inspiration', cursive;
+    font-family: 'Ubuntu', sans-serif;
     color: black;
     font-size: 3rem;
     /* justify-content: center;
@@ -159,12 +160,17 @@ button.botonexperiencias:hover{
 
 /* miPorfolio.html */
 .porfolio {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: rgba(224, 216, 216, 0.904);
     margin: 5px;
     padding: 5px;
     box-shadow: 5px black;
+}
+main img {
+    height: 50px;
+    border-radius:15px;
+   
 }
 main img {
     height: 30vw;
@@ -179,6 +185,25 @@ main img {
 .conocimientos {
     padding: 10px;
 }
+
+.porfolio section ul li {
+    list-style: none;
+}
+
+
+
+/* media queries */
+
+
+@media only screen and (min-width: 620px) {
+    .porfolio {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+}
+
 /* fin de miPorfolio */
 
 /* contacto */
@@ -220,9 +245,9 @@ main img {
     padding: 2px;
 }
 .contacto p {        
-    font-family: 'Inspiration', cursive;
+    font-family: 'Ubuntu', sans-serif;
     color: black;
-    font-size: 4rem;
+    font-size: 2rem;
     justify-content: center;
     text-align: center;
     /* fin de contacto */

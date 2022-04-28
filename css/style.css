@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: flex-end;
     }
-    .boton__menu {
+.boton__menu {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -30,9 +30,9 @@ header {
         color:rgb(22, 20, 92);    
     }
     
-    .menu {
+.menu {
     display: none;
-    }
+ }
     
 /* media querie */
 /* inicio header */
@@ -274,13 +274,13 @@ footer {
 }
 @media only screen and (min-width: 890px) {
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footer li i{
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer li i{
     gap: 2px;
-} 
+    } 
 }
 /* fin del footer */

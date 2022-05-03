@@ -65,6 +65,44 @@ header {
 
 /* main del inicio */
 
+
+.contenedor-foto-de-perfil {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../medios/fotofondo.jpeg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(110%) brightness(50%);
+    padding: 5px;
+    margin: 0px 5px;
+}
+.contenedor-foto-de-perfil .contenedor-presentacion{
+    display: block;
+    justify-content: flex-end;
+    text-align: right;
+    margin-top: 200px;
+}
+.contenedor-foto-de-perfil .contenedor-presentacion .contenedor-titulo-1{
+    color: blue;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+    margin:5px;
+    font-size: 2em;
+    
+}
+.contenedor-foto-de-perfil .contenedor-presentacion .contenedor-titulo-2 {
+    color: blue;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+    margin:5px;
+    font-size: 2em
+}
+
+
+
+/* inicio acerca-de-mi.html */
 @keyframes left-in {
     0% {
         left:-100%;
@@ -76,90 +114,77 @@ header {
     }
     
 }
-.paginaprincipal {
-    background-image: url("../medios/fotofondo.jpeg");
-    height: 70vh vw;
-    /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 
-    filter: contrast(110%) brightness(90%);
-    padding: 5px;
-    margin: 0px 5px;
+main .contenedor-acerca-de-mi {
+    display: block;
+    margin: 5px;
+    padding: 3px;
+   
 }
-.titulopaginaprincipal{
-    position: relative;
-    color:blue;
+main .contenedor-acerca-de-mi h2{
+    display: block;
+    justify-content: center;
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    text-align: left;
-    padding: 5px;
-    margin:5px;
-    width: 50px;
-    font-size: 2em;
     animation-name: left-in;
     animation-duration: 1s;
 }
-
-
-
-.botonexperiencias {
-    position: absolute;
-    right:26px;
-    bottom:50px;
-    width: 10%;
-    height: 7%;
-    border-radius: 8px;
-}
-button.botonexperiencias:hover{
-    background-color: rgba(128, 128, 128, 0.192);
-    color: rgba(240, 248, 255, 0.822);
-}
-.parpagprincipal {
-    color:blue;
-    font-size: 1em;
+main .contenedor-acerca-de-mi .contenedor-presentacion {
+    display: block;
+    width: 100%;
+    padding: 5%;
+  
 }
 
-/* inicio blog.html */
-.blog {
-    height: 70vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 5px;
+main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-1 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    width: 70%;  
+
+}
+
+main .contenedor-acerca-de-mi .contenedor-presentacion .linea-divisoria {
+    justify-content: center;
     padding: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to right, red, black, red);
+    height: 3px;
+    width: 90%;
+    padding: 0;
+    margin: 20px;
+
 }
-.columna1 .blog__social {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 3rem;
-    justify-content: center;
-    text-align: center;
-}
-.columna1 .blog__social li i:hover{
-    transform: scale(1.4)
-}
-.columna1 p{
+main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-2 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
     font-family: 'Ubuntu', sans-serif;
-    color: black;
-    font-size: 3rem;
-    justify-content: center;
-    text-align: center;
+    margin-left: 300px;
+   
 }
-.columna2 p{
+main .contenedor-acerca-de-mi .contenedor-presentacion .linea-divisoria-2 {
+    justify-content: center;
+    padding: 5px;
+    background: linear-gradient(to right, red, black, red);
+    height: 3px;
+    width: 90%;
+    padding: 0;
+    margin: 20px;
+}
+main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-3 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
     font-family: 'Ubuntu', sans-serif;
-    color: black;
-    font-size: 3rem;
-    /* justify-content: center;
-    text-align: center; */
+    width: 70%;  
 }
 
-
-/* fin del blog */
+/* fin de acerda-de-mi */
 
 
 /* miPorfolio.html */
-.porfolio {
+.contenedor-porfolio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: rgba(224, 216, 216, 0.904);
@@ -167,12 +192,8 @@ button.botonexperiencias:hover{
     padding: 5px;
     box-shadow: 5px black;
 }
-main img {
-    height: 50px;
-    border-radius:15px;
-   
-}
-main img {
+
+.contenedor-porfolio .contenedor-foto-portada {
     height: 30vw;
     border-radius:15px;
 }

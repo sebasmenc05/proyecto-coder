@@ -3,35 +3,182 @@
   margin: 0;
   padding: 0; }
 
-/* estilos del header */
 body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto; }
-  body header {
-    background-color: rgba(245, 245, 220, 0.473);
-    padding: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    margin: 10px;
-    display: flex;
-    justify-content: flex-end; }
-  body .paginaprincipal {
-    background-image: url("../medios/fotofondo.jpeg");
-    height: 70vh vw;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    filter: contrast(110%) brightness(90%);
-    padding: 5px;
-    margin: 0px 5px; }
-    body .paginaprincipal .titulopaginaprincipal {
-      position: relative;
+
+header {
+  background-color: rgba(245, 245, 220, 0.473);
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end; }
+
+li {
+  padding: 5px;
+  margin: 5px;
+  list-style: none; }
+  li a {
+    text-decoration: none;
+    border-radius: 40%; }
+
+header nav ul li a:hover {
+  background-color: #f08e8e;
+  color: rgba(77, 39, 39, 0.849);
+  padding: 5px; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer li {
+    list-style: none; }
+    .footer li i {
+      gap: 2px; }
+
+/* comienza index */
+.contenedor-foto-de-perfil {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../medios/fotofondo.jpeg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(110%) brightness(50%);
+  padding: 5px;
+  margin: 0px 5px; }
+  .contenedor-foto-de-perfil .contenedor-presentacion {
+    display: block;
+    justify-content: flex-end;
+    text-align: right;
+    margin-top: 200px; }
+    .contenedor-foto-de-perfil .contenedor-presentacion .contenedor-titulo-1 {
       color: blue;
-      font-family: 'Ubuntu', sans-serif;
-      text-align: left;
+      font-family: "Ubuntu", sans-serif;
       padding: 5px;
       margin: 5px;
-      width: 50px;
-      font-size: 2em;
-      animation-name: left-in;
-      animation-duration: 1s; }
+      font-size: 2em; }
+    .contenedor-foto-de-perfil .contenedor-presentacion .contenedor-titulo-2 {
+      color: blue;
+      font-family: 'Ubuntu', sans-serif;
+      padding: 5px;
+      margin: 5px;
+      font-size: 2em; }
+
+/* fin del index */
+/* inicio de acerca-de-mi */
+main .contenedor-acerca-de-mi {
+  display: block;
+  margin: 5px;
+  padding: 3px; }
+  main .contenedor-acerca-de-mi h2 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif; }
+  main .contenedor-acerca-de-mi .contenedor-presentacion {
+    display: block;
+    width: 100%;
+    padding: 5%; }
+    main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-1 {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      font-family: "Ubuntu", sans-serif;
+      width: 70%; }
+    main .contenedor-acerca-de-mi .contenedor-presentacion .linea-divisoria {
+      justify-content: center;
+      padding: 5px;
+      background: linear-gradient(to right, red, black, red);
+      height: 3px;
+      width: 90%;
+      padding: 0;
+      margin: 20px; }
+    main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-2 {
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      font-family: "Ubuntu", sans-serif;
+      margin-left: 300px; }
+    main .contenedor-acerca-de-mi .contenedor-presentacion .linea-divisoria-2 {
+      justify-content: center;
+      padding: 5px;
+      background: linear-gradient(to right, red, black, red);
+      height: 3px;
+      width: 90%;
+      padding: 0;
+      margin: 20px; }
+    main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-3 {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      font-family: "Ubuntu", sans-serif;
+      width: 70%; }
+
+/* fin acerca de mi */
+/* inicio de mi-portafolio */
+.contenedor-porfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(224, 216, 216, 0.904);
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 5px black; }
+  .contenedor-porfolio .contenedor-foto-portada {
+    height: 30vw;
+    border-radius: 15px;
+    list-style: none; }
+  .contenedor-porfolio .contenedor-educacion {
+    padding: 10px;
+    list-style: none; }
+  .contenedor-porfolio .contenedor-experiencias {
+    padding: 10px;
+    list-style: none; }
+  .contenedor-porfolio .contenedor-conocimientos {
+    padding: 10px;
+    list-style: none; }
+
+/* fin de mi-portafolio */
+/* inicio de contacto */
+.contacto {
+  min-height: 80vh;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at 100%, #bebee0, transparent); }
+  .contacto .contacto-titulo {
+    font-family: "Ubuntu", sans-serif; }
+  .contacto p {
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center; }
+  .contacto .contacto__form {
+    display: grid;
+    justify-content: center;
+    text-align: center; }
+    .contacto .contacto__form legend {
+      text-align: center;
+      margin-bottom: 2px; }
+    .contacto .contacto__form input {
+      height: 2rem;
+      padding: 2px;
+      text-align: center;
+      margin-bottom: 1rem;
+      outline: none; }
+    .contacto .contacto__form .contacto__botones {
+      justify-content: center;
+      text-align: center;
+      gap: 2px;
+      margin-top: 1rem;
+      padding: 2px; }
+
+/* fin de contacto */

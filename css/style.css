@@ -277,11 +277,47 @@ main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-3 {
 
 /* inicio entretenimiento */
 
-.entretenimiento{
-    height: 25rem;
-    justify-content:center;
-    text-align:center;
-    background: radial-gradient(rgb(163, 82, 82), rgb(228, 209, 209));
+.contenedor-habilidades{
+  padding: 2rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  
+}
+.contenedor-titulo-habilidades {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 3px;
+}
+.contenedor-habilidades .imag-git{
+    grid-area: imag-1;
+}
+.contenedor-habilidades .imag-github{
+    grid-area: imag-2;
+}
+.contenedor-habilidades .imag-html{
+    grid-area: imag-3;
+}
+.contenedor-habilidades .imag-css{
+    grid-area: imag-4;
+}
+.contenedor-habilidades .imag-mysql{
+    grid-area: imag-5;
+}
+.contenedor-habilidades .imag-php{
+    grid-area: imag-6;
+}
+.contenedor-habilidades .contenedor-habilidades-grid {
+    display: grid;
+    grid-template-areas: 
+    "imag-1 imag-2 imag-3"
+    "imag-4 imag-5 imag-6"
+    ;
+}
+.contenedor-habilidades .contenedor-habilidades-grid img {
+        padding: 2px;
+
 }
 
 /* footer */

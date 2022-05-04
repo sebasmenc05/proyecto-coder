@@ -169,3 +169,36 @@ main .contenedor-acerca-de-mi {
 
 }
 /* fin de contacto */
+
+
+/* inicio de habilidades */
+
+.contenedor-habilidades{
+    padding: 2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    .contenedor-titulo-habilidades {
+        font-family: $tipoDeFuente;
+        margin-bottom: 3px;
+    }
+    @for $i from 1 through 6 {
+        .imag-#{$i} {
+            grid-area: img #{$i};
+        }
+    }
+    .contenedor-habilidades .contenedor-habilidades-grid {
+        display: grid;
+        grid-template-areas: 
+        "imag-1 imag-2 imag-3"
+        "imag-4 imag-5 imag-6"
+        ;
+        img {
+            padding: 2px;
+    
+        }
+    }
+}
+/* fin de habilidades */

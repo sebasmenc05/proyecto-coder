@@ -182,3 +182,33 @@ main .contenedor-acerca-de-mi {
       padding: 2px; }
 
 /* fin de contacto */
+/* inicio de habilidades */
+.contenedor-habilidades {
+  padding: 2rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  text-align: center; }
+  .contenedor-habilidades .contenedor-titulo-habilidades {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 3px; }
+  .contenedor-habilidades .imag-1 {
+    grid-area: img 1; }
+  .contenedor-habilidades .imag-2 {
+    grid-area: img 2; }
+  .contenedor-habilidades .imag-3 {
+    grid-area: img 3; }
+  .contenedor-habilidades .imag-4 {
+    grid-area: img 4; }
+  .contenedor-habilidades .imag-5 {
+    grid-area: img 5; }
+  .contenedor-habilidades .imag-6 {
+    grid-area: img 6; }
+  .contenedor-habilidades .contenedor-habilidades .contenedor-habilidades-grid {
+    display: grid;
+    grid-template-areas: "imag-1 imag-2 imag-3" "imag-4 imag-5 imag-6"; }
+    .contenedor-habilidades .contenedor-habilidades .contenedor-habilidades-grid img {
+      padding: 2px; }
+
+/* fin de habilidades */

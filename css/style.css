@@ -290,22 +290,22 @@ main .contenedor-acerca-de-mi .contenedor-presentacion .presentacion-3 {
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 3px;
 }
-.contenedor-habilidades .imag-git{
+.contenedor-habilidades .imag-1{
     grid-area: imag-1;
 }
-.contenedor-habilidades .imag-github{
+.contenedor-habilidades .imag-2{
     grid-area: imag-2;
 }
-.contenedor-habilidades .imag-html{
+.contenedor-habilidades .imag-3{
     grid-area: imag-3;
 }
-.contenedor-habilidades .imag-css{
+.contenedor-habilidades .imag-4{
     grid-area: imag-4;
 }
-.contenedor-habilidades .imag-mysql{
+.contenedor-habilidades .imag-5{
     grid-area: imag-5;
 }
-.contenedor-habilidades .imag-php{
+.contenedor-habilidades .imag-6{
     grid-area: imag-6;
 }
 .contenedor-habilidades .contenedor-habilidades-grid {
